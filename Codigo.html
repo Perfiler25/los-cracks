@@ -74,7 +74,7 @@
             border: 3px solid transparent;
             border-image: linear-gradient(135deg, #7a5813, #f7e5a9, #b89742, #fef8d9, #96742a) 1;
             padding: 80px 60px;
-            border-radius: 4px; /* Estilo clásico y angular */
+            border-radius: 4px;
             box-shadow: 
                 0 30px 70px rgba(0, 0, 0, 0.9),
                 0 0 50px rgba(184, 151, 66, 0.2),
@@ -91,7 +91,7 @@
             transform: translateY(-5px) rotateX(2deg);
         }
 
-        /* Espada Excalibur SVG */
+        /* Espada Excalibur SVG animada */
         .espada-contenedor {
             margin-bottom: 40px;
             filter: drop-shadow(0 0 15px rgba(254, 248, 217, 0.6));
@@ -243,31 +243,22 @@
     <div class="excalibur-aura"></div>
 
     <div class="monolito">
-        <!-- Iconografía de Espada Sagrada en SVG -->
         <div class="espada-contenedor">
             <svg width="80" height="180" viewBox="0 0 100 220" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <!-- Brillo de la punta -->
                 <circle cx="50" cy="15" r="8" fill="#fff8dc" filter="blur(3px)" />
-                <!-- Hoja de la Espada -->
                 <path d="M50 15 L58 50 L56 160 L50 165 L44 160 L42 50 Z" fill="url(#goldGrad)" stroke="#fef8d9" stroke-width="1"/>
-                <path d="M50 15 L50 165" stroke="#fff" stroke-width="1.5" opacity="0.7"/> <!-- Filo reflejo central -->
-                <!-- Guarda / Hilt -->
+                <path d="M50 15 L50 165" stroke="#fff" stroke-width="1.5" opacity="0.7"/> 
                 <path d="M20 165 L80 165 L75 173 L55 173 L50 178 L45 173 L25 173 Z" fill="url(#darkGoldGrad)" stroke="#f7e5a9" stroke-width="1"/>
-                <!-- Joyas de la Guarda -->
                 <circle cx="50" cy="169" r="2.5" fill="#ffffff" />
                 <circle cx="30" cy="169" r="2" fill="#ffffff" opacity="0.8"/>
                 <circle cx="70" cy="169" r="2" fill="#ffffff" opacity="0.8"/>
-                <!-- Empuñadura / Grip -->
                 <rect x="46" y="178" width="8" height="32" rx="2" fill="url(#goldGrad)" stroke="#96742a" stroke-width="0.5"/>
-                <!-- Líneas de la empuñadura -->
                 <line x1="46" y1="184" x2="54" y2="184" stroke="#543d0a" stroke-width="1"/>
                 <line x1="46" y1="192" x2="54" y2="192" stroke="#543d0a" stroke-width="1"/>
                 <line x1="46" y1="200" x2="54" y2="200" stroke="#543d0a" stroke-width="1"/>
-                <!-- Pomo / Pommel -->
                 <circle cx="50" cy="213" r="7" fill="url(#darkGoldGrad)" stroke="#fef8d9" stroke-width="1"/>
                 <polygon points="50,208 54,213 50,218 46,213" fill="#ffffff"/>
 
-                <!-- Definición de Gradientes Metalizados -->
                 <defs>
                     <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
                         <stop offset="0%" stop-color="#fef8d9" />
